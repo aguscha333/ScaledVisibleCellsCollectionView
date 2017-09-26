@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		808743B61B88BDA2000B0B16 /* ScaledVisibleCellsCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 808743B51B88BDA2000B0B16 /* ScaledVisibleCellsCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		808743BC1B88BDA2000B0B16 /* ScaledVisibleCellsCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808743B01B88BDA2000B0B16 /* ScaledVisibleCellsCollectionView.framework */; };
-		808743C31B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808743C21B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests.swift */; };
 		808743CD1B88BE36000B0B16 /* ScaledVisibleCellsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808743CC1B88BE36000B0B16 /* ScaledVisibleCellsCollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +27,6 @@
 		808743B41B88BDA2000B0B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808743B51B88BDA2000B0B16 /* ScaledVisibleCellsCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaledVisibleCellsCollectionView.h; sourceTree = "<group>"; };
 		808743BB1B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaledVisibleCellsCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		808743C11B88BDA2000B0B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		808743C21B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledVisibleCellsCollectionViewTests.swift; sourceTree = "<group>"; };
 		808743CC1B88BE36000B0B16 /* ScaledVisibleCellsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ScaledVisibleCellsCollectionView.swift; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
@@ -56,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				808743B21B88BDA2000B0B16 /* ScaledVisibleCellsCollectionView */,
-				808743BF1B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests */,
 				808743B11B88BDA2000B0B16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,23 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				808743B41B88BDA2000B0B16 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		808743BF1B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				808743C21B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests.swift */,
-				808743C01B88BDA2000B0B16 /* Supporting Files */,
-			);
-			path = ScaledVisibleCellsCollectionViewTests;
-			sourceTree = "<group>";
-		};
-		808743C01B88BDA2000B0B16 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				808743C11B88BDA2000B0B16 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,9 +147,11 @@
 				TargetAttributes = {
 					808743AF1B88BDA2000B0B16 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0900;
 					};
 					808743BA1B88BDA2000B0B16 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -222,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808743C31B88BDA2000B0B16 /* ScaledVisibleCellsCollectionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +259,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -319,6 +300,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -340,6 +322,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -356,6 +340,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -373,6 +359,8 @@
 				INFOPLIST_FILE = ScaledVisibleCellsCollectionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -386,6 +374,8 @@
 				INFOPLIST_FILE = ScaledVisibleCellsCollectionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
